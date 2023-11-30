@@ -20,10 +20,8 @@ public class UserOperators {
         @return: boolean
      */
     public boolean isValidFirstName(String firstName){
-        String regex = "^[A-Z][a-zA-Z]{2,}$";
-        Pattern pattern = Pattern.compile(regex);
-        Matcher matcher = pattern.matcher(firstName);
-        return matcher.matches();
+        String firstNameRegex = "^[A-Z][a-zA-Z]{2,}$";
+        return firstName.matches(firstNameRegex);
     }
 
     /*
@@ -32,10 +30,8 @@ public class UserOperators {
         @return: boolean
      */
     public boolean isValidLastName(String lastName){
-        String regex = "^[A-Z][a-zA-Z]{2,}$";
-        Pattern pattern = Pattern.compile(regex);
-        Matcher matcher = pattern.matcher(lastName);
-        return matcher.matches();
+        String lastNameRegex = "^[A-Z][a-zA-Z]{2,}$";
+        return lastName.matches(lastNameRegex);
     }
 
     /*
@@ -44,9 +40,17 @@ public class UserOperators {
         @return: boolean
      */
     public boolean isValidEmail(String email){
-        String regex = "^[a-zA-Z0-9]+([._+-][a-zA-Z0-9]+)*@[a-zA-Z0-9]+\\.[a-zA-Z]{2,}(\\.[a-zA-Z]{2,})?$";
-        Pattern pattern = Pattern.compile(regex);
-        Matcher matcher = pattern.matcher(email);
-        return matcher.matches();
+        String emailRegex = "^[a-zA-Z0-9]+([._+-][a-zA-Z0-9]+)*@[a-zA-Z0-9]+\\.[a-zA-Z]{2,}(\\.[a-zA-Z]{2,})?$";
+        return email.matches(emailRegex);
+    }
+
+    /*
+        @desc: checks for valid mobile no.
+        @params: MobileNumber(String)
+        @return: boolean
+     */
+    public boolean isValidMobileNo(String mobileNumber){
+        String mobileNumberRegex = "^\\d{2} \\d{10}$";
+        return mobileNumber.matches(mobileNumberRegex);
     }
 }

@@ -8,15 +8,18 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter your first name: ");
-        String firstName = scanner.next();
+        String firstName = scanner.nextLine();
 
         System.out.print("Enter your Last name: ");
-        String lastName = scanner.next();
+        String lastName = scanner.nextLine();
 
         System.out.print("Enter your Email: ");
-        String email = scanner.next();
+        String email = scanner.nextLine();
 
-        if(userOperator.isValidFirstName(firstName) && userOperator.isValidLastName(lastName) && userOperator.isValidEmail(email)){
+        System.out.print("Enter your Mobile Number: ");
+        String mobileNumber = scanner.nextLine();
+
+        if(userOperator.isValidFirstName(firstName) && userOperator.isValidLastName(lastName) && userOperator.isValidEmail(email) && userOperator.isValidMobileNo(mobileNumber)){
             User user = userOperator.registerUser(firstName);
             System.out.println("User Created");
         }
