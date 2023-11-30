@@ -4,33 +4,33 @@ public class Main {
     public static void main(String[] args) {
         UserOperators userOperator = new UserOperators();
 
-//        System.out.println("Hi User, Please Register");
-//        Scanner scanner = new Scanner(System.in);
-//
-//        System.out.print("Enter your first name: ");
-//        String firstName = scanner.nextLine();
-//
-//        System.out.print("Enter your Last name: ");
-//        String lastName = scanner.nextLine();
-//
-//        System.out.print("Enter your Email: ");
-//        String email = scanner.nextLine();
-//
-//        System.out.print("Enter your Mobile Number: ");
-//        String mobileNumber = scanner.nextLine();
-//
-//        System.out.print("Enter your Password: ");
-//        String password = scanner.nextLine();
-//
-//        if(userOperator.isValidFirstName(firstName) && userOperator.isValidLastName(lastName) && userOperator.isValidEmail(email) && userOperator.isValidMobileNo(mobileNumber) && userOperator.isValidPassword(password)){
-//            User user = userOperator.registerUser(firstName);
-//            System.out.println("User Created");
-//        }
-//        else{
-//            System.out.println("Invalid Details");
-//        }
+        System.out.println("Hi User, Please Register");
+        Scanner scanner = new Scanner(System.in);
 
-        
+        System.out.print("Enter your first name: ");
+        String firstName = scanner.nextLine();
+
+        System.out.print("Enter your Last name: ");
+        String lastName = scanner.nextLine();
+
+        System.out.print("Enter your Email: ");
+        String email = scanner.nextLine();
+
+        System.out.print("Enter your Mobile Number: ");
+        String mobileNumber = scanner.nextLine();
+
+        System.out.print("Enter your Password: ");
+        String password = scanner.nextLine();
+
+        if(userOperator.isValidFirstName(firstName) && userOperator.isValidLastName(lastName) && userOperator.isValidEmail(email) && userOperator.isValidMobileNo(mobileNumber) && userOperator.isValidPassword(password)){
+            User user = userOperator.registerUser(firstName,lastName,email,mobileNumber,password);
+            System.out.println("User Created");
+        }
+        else{
+            System.out.println("Invalid Details");
+        }
+
+        /*
 
         // Seperate Email testing
         System.out.println("Email1: abc@yahoo.com -> " + userOperator.isValidEmail("abc@yahoo.com"));
@@ -55,5 +55,7 @@ public class Main {
         System.out.println("Email20: abc@abc@gmail.com -> " + userOperator.isValidEmail("abc@abc@gmail.com"));
         System.out.println("Email19: abc@gmail.com.1a -> " + userOperator.isValidEmail("abc@gmail.com.1a"));
         System.out.println("Email20: abc@gmail.com.aa.au -> " + userOperator.isValidEmail("abc@gmail.com.aa.au"));
+
+         */
     }
 }

@@ -10,8 +10,8 @@ public class UserOperators {
         @params: properties of User classs
         @return: User object
      */
-    public User registerUser(String firstName){
-        return new User(firstName);
+    public User registerUser(String firstName, String lastName, String email, String mobileNumber, String password){
+        return new User(firstName, lastName, email, mobileNumber, password);
     }
 
     /*
