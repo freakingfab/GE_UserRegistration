@@ -60,7 +60,7 @@ public class UserOperators {
         @return: boolean
      */
     public boolean isValidPassword(String password){
-        String passwordRegex = "^.{8,}$";
+        String passwordRegex = "^(?=.*[A-Z]).{8,}$";
         return password.matches(passwordRegex);
     }
 }
