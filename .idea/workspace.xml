@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="94cb2d97-a556-4cf4-821d-f242f590f1fd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bridgelabz/userregistration/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bridgelabz/userregistration/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bridgelabz/userregistration/UserOperators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bridgelabz/userregistration/UserOperators.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +44,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "UC3__email",
+    "git-widget-placeholder": "UC4__mobile__no",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -101,7 +100,7 @@
       <option name="presentableId" value="Default" />
       <updated>1701338655315</updated>
       <workItem from="1701338658342" duration="5482000" />
-      <workItem from="1701356604688" duration="1822000" />
+      <workItem from="1701356604688" duration="2156000" />
     </task>
     <servers />
   </component>

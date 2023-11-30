@@ -19,7 +19,10 @@ public class Main {
         System.out.print("Enter your Mobile Number: ");
         String mobileNumber = scanner.nextLine();
 
-        if(userOperator.isValidFirstName(firstName) && userOperator.isValidLastName(lastName) && userOperator.isValidEmail(email) && userOperator.isValidMobileNo(mobileNumber)){
+        System.out.print("Enter your Password: ");
+        String password = scanner.nextLine();
+
+        if(userOperator.isValidFirstName(firstName) && userOperator.isValidLastName(lastName) && userOperator.isValidEmail(email) && userOperator.isValidMobileNo(mobileNumber) && userOperator.isValidPassword(password)){
             User user = userOperator.registerUser(firstName);
             System.out.println("User Created");
         }

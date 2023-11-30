@@ -53,4 +53,14 @@ public class UserOperators {
         String mobileNumberRegex = "^\\d{2} \\d{10}$";
         return mobileNumber.matches(mobileNumberRegex);
     }
+
+    /*
+        @desc: checks for valid password
+        @params: Password(String)
+        @return: boolean
+     */
+    public boolean isValidPassword(String password){
+        String passwordRegex = "^.{8,}$";
+        return password.matches(passwordRegex);
+    }
 }
