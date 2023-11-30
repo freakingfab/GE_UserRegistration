@@ -31,10 +31,22 @@ public class UserOperators {
         @params: LastName(String)
         @return: boolean
      */
-    public boolean isValidLastName(String firstName){
+    public boolean isValidLastName(String lastName){
         String regex = "^[A-Z][a-zA-Z]{2,}$";
         Pattern pattern = Pattern.compile(regex);
-        Matcher matcher = pattern.matcher(firstName);
+        Matcher matcher = pattern.matcher(lastName);
+        return matcher.matches();
+    }
+
+    /*
+        @desc: checks for valid email
+        @params: Email(String)
+        @return: boolean
+     */
+    public boolean isValidEmail(String email){
+        String regex = "^[a-zA-Z0-9]+([._+-][a-zA-Z0-9]+)*@[a-zA-Z0-9]+\\.[a-zA-Z]{2,}(\\.[a-zA-Z]{2,})?$";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(email);
         return matcher.matches();
     }
 }

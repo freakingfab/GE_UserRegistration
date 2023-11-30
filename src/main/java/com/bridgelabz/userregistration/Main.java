@@ -13,7 +13,10 @@ public class Main {
         System.out.print("Enter your Last name: ");
         String lastName = scanner.next();
 
-        if(userOperator.isValidFirstName(firstName) && userOperator.isValidLastName(lastName)){
+        System.out.print("Enter your Email: ");
+        String email = scanner.next();
+
+        if(userOperator.isValidFirstName(firstName) && userOperator.isValidLastName(lastName) && userOperator.isValidEmail(email)){
             User user = userOperator.registerUser(firstName);
             System.out.println("User Created");
         }
