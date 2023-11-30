@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="94cb2d97-a556-4cf4-821d-f242f590f1fd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bridgelabz/userregistration/UserOperators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bridgelabz/userregistration/UserOperators.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bridgelabz/userregistration/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bridgelabz/userregistration/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +45,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "UC6__password__rule2",
+    "git-widget-placeholder": "UC8__password__rule4",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -100,7 +101,7 @@
       <option name="presentableId" value="Default" />
       <updated>1701338655315</updated>
       <workItem from="1701338658342" duration="5482000" />
-      <workItem from="1701356604688" duration="2544000" />
+      <workItem from="1701356604688" duration="3690000" />
     </task>
     <servers />
   </component>
