@@ -10,7 +10,10 @@ public class Main {
         System.out.print("Enter your first name: ");
         String firstName = scanner.next();
 
-        if(userOperator.isValidFirstName(firstName)){
+        System.out.print("Enter your Last name: ");
+        String lastName = scanner.next();
+
+        if(userOperator.isValidFirstName(firstName) && userOperator.isValidLastName(lastName)){
             User user = userOperator.registerUser(firstName);
             System.out.println("User Created");
         }

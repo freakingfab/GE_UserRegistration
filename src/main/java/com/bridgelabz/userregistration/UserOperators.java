@@ -25,4 +25,16 @@ public class UserOperators {
         Matcher matcher = pattern.matcher(firstName);
         return matcher.matches();
     }
+
+    /*
+        @desc: checks for valid last Name
+        @params: LastName(String)
+        @return: boolean
+     */
+    public boolean isValidLastName(String firstName){
+        String regex = "^[A-Z][a-zA-Z]{2,}$";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(firstName);
+        return matcher.matches();
+    }
 }
