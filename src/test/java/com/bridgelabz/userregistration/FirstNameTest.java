@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 /*
     @desc: class for testing isValidFirstName
  */
-public class firstNameTest {
+public class FirstNameTest {
 
     @Test
     public void testIsValidFirstName() {

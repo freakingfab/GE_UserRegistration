@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="94cb2d97-a556-4cf4-821d-f242f590f1fd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/bridgelabz/userregistration/UserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/bridgelabz/userregistration/EmailTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bridgelabz/userregistration/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bridgelabz/userregistration/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bridgelabz/userregistration/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bridgelabz/userregistration/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bridgelabz/userregistration/UserOperators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bridgelabz/userregistration/UserOperators.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/bridgelabz/userregistration/firstNameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/bridgelabz/userregistration/FirstNameTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +46,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "UC9__rigorous__test",
+    "git-widget-placeholder": "UC10__user__registration__test",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -59,7 +57,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.UserTest.sadUserRegistrationTest">
+  <component name="RunManager" selected="JUnit.EmailTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.bridgelabz.userregistration.Main" />
       <module name="UserRegistration" />
@@ -69,6 +67,21 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmailTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UserRegistration" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bridgelabz.userregistration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.bridgelabz.userregistration" />
+      <option name="MAIN_CLASS_NAME" value="com.bridgelabz.userregistration.EmailTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -120,28 +133,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="firstNameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="UserRegistration" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.bridgelabz.userregistration.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.bridgelabz.userregistration" />
-      <option name="MAIN_CLASS_NAME" value="com.bridgelabz.userregistration.firstNameTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EmailTest" />
         <item itemvalue="JUnit.UserTest.sadUserRegistrationTest" />
         <item itemvalue="JUnit.UserTest.happyUserRegistrationTest" />
         <item itemvalue="JUnit.UserTest" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.firstNameTest" />
       </list>
     </recent_temporary>
   </component>
@@ -154,7 +152,7 @@
       <option name="presentableId" value="Default" />
       <updated>1701338655315</updated>
       <workItem from="1701338658342" duration="5482000" />
-      <workItem from="1701356604688" duration="5574000" />
+      <workItem from="1701356604688" duration="6890000" />
     </task>
     <servers />
   </component>
