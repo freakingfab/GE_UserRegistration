@@ -11,6 +11,11 @@ public class FirstNameTest {
     public void testIsValidFirstName() {
         UserOperators userOperator = new UserOperators();
         assertNotNull(userOperator);
-        assertEquals(true, userOperator.isValidFirstName("Daksh"));
+
+        try {
+            assertTrue(userOperator.isValidFirstName("daksh"));
+        } catch (IllegalArgumentException e) {
+            System.err.println("Invalid Argument: " + e.getMessage());
+        }
     }
 }

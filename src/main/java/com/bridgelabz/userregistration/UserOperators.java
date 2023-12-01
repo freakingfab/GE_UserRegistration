@@ -20,8 +20,17 @@ public class UserOperators {
         @return: boolean
      */
     public boolean isValidFirstName(String firstName){
+        if (firstName == null) {
+            throw new IllegalArgumentException("First Name cannot be null");
+        }
+
         String firstNameRegex = "^[A-Z][a-zA-Z]{2,}$";
-        return firstName.matches(firstNameRegex);
+        if(firstName.matches(firstNameRegex)){
+            return true;
+        }
+        else{
+            throw new IllegalArgumentException("Invalid first name format");
+        }
     }
 
     /*
@@ -30,8 +39,17 @@ public class UserOperators {
         @return: boolean
      */
     public boolean isValidLastName(String lastName){
+        if (lastName == null) {
+            throw new IllegalArgumentException("Last Name cannot be null");
+        }
+
         String lastNameRegex = "^[A-Z][a-zA-Z]{2,}$";
-        return lastName.matches(lastNameRegex);
+        if(lastName.matches(lastNameRegex)){
+            return true;
+        }
+        else{
+            throw new IllegalArgumentException("Invalid last name format");
+        }
     }
 
     /*
@@ -40,8 +58,17 @@ public class UserOperators {
         @return: boolean
      */
     public boolean isValidEmail(String email){
+        if (email == null) {
+            throw new IllegalArgumentException("Email cannot be null");
+        }
+
         String emailRegex = "^[a-zA-Z0-9]+([._+-][a-zA-Z0-9]+)*@[a-zA-Z0-9]+\\.[a-zA-Z]{2,}(\\.[a-zA-Z]{2,})?$";
-        return email.matches(emailRegex);
+        if(email.matches(emailRegex)){
+            return true;
+        }
+        else{
+            throw new IllegalArgumentException("Invalid email format");
+        }
     }
 
     /*
@@ -50,8 +77,17 @@ public class UserOperators {
         @return: boolean
      */
     public boolean isValidMobileNo(String mobileNumber){
+        if (mobileNumber == null) {
+            throw new IllegalArgumentException("Mobile number cannot be null");
+        }
+
         String mobileNumberRegex = "^\\d{2} \\d{10}$";
-        return mobileNumber.matches(mobileNumberRegex);
+        if(mobileNumber.matches(mobileNumberRegex)){
+            return true;
+        }
+        else{
+            throw new IllegalArgumentException("Invalid mobile number format");
+        }
     }
 
     /*
@@ -60,7 +96,16 @@ public class UserOperators {
         @return: boolean
      */
     public boolean isValidPassword(String password){
+        if (password == null) {
+            throw new IllegalArgumentException("Password cannot be null");
+        }
+
         String passwordRegex = "^(?=.*[A-Z])(?=.*\\d)(?=.*[^A-Za-z\\d]).{8,}$";
-        return password.matches(passwordRegex);
+        if(password.matches(passwordRegex)){
+            return true;
+        }
+        else{
+            throw new IllegalArgumentException("Invalid email format");
+        }
     }
 }

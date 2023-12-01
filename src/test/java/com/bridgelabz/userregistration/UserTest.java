@@ -15,12 +15,18 @@ public class UserTest {
     @Test
     public void happyUserRegistrationTest(){
         UserOperators userOperator = new UserOperators();
-        User user;
-        if(userOperator.isValidFirstName("Daksh") && userOperator.isValidLastName("Nahar") && userOperator.isValidEmail("dak@gm.com") && userOperator.isValidMobileNo("91 6377271771") && userOperator.isValidPassword("Daksh@123")){
-            user = userOperator.registerUser("Daksh","Nahar","dak@gm.com","91 6377271771", "Daksh@123");
-        }
-        else{
-            user = null;
+        User user = null;
+        try {
+            if (userOperator.isValidFirstName("Daksh") &&
+                    userOperator.isValidLastName("Nahar") &&
+                    userOperator.isValidEmail("dak@gm.com") &&
+                    userOperator.isValidMobileNo("91 6377271771") &&
+                    userOperator.isValidPassword("Daksh@123")) {
+
+                user = userOperator.registerUser("Daksh", "Nahar", "dak@gm.com", "91 6377271771", "Daksh@123");
+            }
+        } catch (IllegalArgumentException e) {
+            System.err.println("Invalid Argument: " + e.getMessage());
         }
         assertNotNull(user);
     }
@@ -34,8 +40,17 @@ public class UserTest {
     public void sadUserRegistrationTest(){
         UserOperators userOperator = new UserOperators();
         User user = null;
-        if(userOperator.isValidFirstName("daksh") && userOperator.isValidLastName("Nahar") && userOperator.isValidEmail("dak@gm.com") && userOperator.isValidMobileNo("916377271771") && userOperator.isValidPassword("daksh@123")){
-            user = userOperator.registerUser("daksh","Nahar","dak@gm.com","91 6377271771", "daksh@123");
+        try {
+            if (userOperator.isValidFirstName("Daksh") &&
+                    userOperator.isValidLastName("Nahar") &&
+                    userOperator.isValidEmail("dak@gm.com") &&
+                    userOperator.isValidMobileNo("916377271771") &&
+                    userOperator.isValidPassword("daksh@123")) {
+
+                user = userOperator.registerUser("Daksh", "Nahar", "dak@gm.com", "916377271771", "daksh@123");
+            }
+        } catch (IllegalArgumentException e) {
+            System.err.println("Invalid Argument: " + e.getMessage());
         }
         assertNull(user);
     }
